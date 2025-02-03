@@ -3,9 +3,7 @@ def main():
     book_path = "books/frankenstein.txt" # Definies variables needed by the main() function that are the products of other nested functions.
     text = get_book_text(book_path)
     num_words = get_num_words(text)
-    char_report = alpha_dict(text)
-    characters = get_character_count(text)
-    
+    char_report = alpha_dict(text)    
 
     char_report.sort(reverse=True, key=sort_on) # Sorts the list of dictionaries by key that is gathered from the sort_on function and goes from high to low.
     print("--- Begin report of books/frankenstein.txt ---")
